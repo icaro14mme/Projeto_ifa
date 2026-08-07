@@ -104,7 +104,7 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: clamp(55px, 8vw, 110px);
+  font-size: clamp(50px, 7vw, 95px);
 
   line-height: 0.9;
 
@@ -147,4 +147,133 @@ nav a:hover {
   background-color: #48c9ff;
 
   transform: translateY(-3px);
+}
+/* =========================
+   PROBLEM SECTION
+========================= */
+
+.problem-section {
+  min-height: 100vh;
+
+  background-color: #071923;
+
+  padding: 120px 10%;
+}
+
+.problem-container {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+/* TÍTULO */
+
+.section-label {
+  color: #48c9ff;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 25px;
+}
+
+.problem-title h2 {
+  font-size: clamp(45px, 6vw, 80px);
+
+  line-height: 0.95;
+
+  letter-spacing: -2px;
+
+  margin-bottom: 25px;
+}
+
+.highlight-text {
+  font-size: 24px;
+
+  color: #48c9ff;
+
+  font-weight: bold;
+}
+
+/* TEXTO */
+
+.problem-content {
+  color: #c7d5dc;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+.problem-content p {
+  margin-bottom: 25px;
+}
+
+/* CARD */
+
+.water-card {
+  grid-column: 2;
+
+  background: linear-gradient(145deg, #0b3147, #08212f);
+
+  border: 1px solid rgba(72, 201, 255, 0.25);
+
+  border-radius: 15px;
+
+  padding: 40px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.water-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+
+  height: 180px;
+
+  background: rgba(72, 201, 255, 0.12);
+
+  border-radius: 50%;
+
+  top: -80px;
+
+  right: -60px;
+}
+
+.water-icon {
+  font-size: 50px;
+
+  display: block;
+
+  margin-bottom: 20px;
+}
+
+.water-card h3 {
+  font-size: 32px;
+
+  line-height: 1;
+
+  margin-bottom: 20px;
+}
+
+.water-card p {
+  color: #b9cbd4;
+
+  line-height: 1.6;
 }
