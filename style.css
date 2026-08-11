@@ -278,78 +278,279 @@ nav a:hover {
   line-height: 1.6;
 }
 
- /* Number section */
-
+/* Number section */
 
 .numbers-section {
+  min-height: 100vh;
 
-    min-height: 100vh;
+  background-color: #f4f8fa;
 
-    background-color: #f4f8fa;
+  color: #071923;
 
-    color: #071923;
-
-    padding: 120px 10%;
-
+  padding: 120px 10%;
 }
-
 
 .numbers-header {
+  max-width: 900px;
 
-    max-width: 900px;
+  margin: 0 auto 80px;
 
-    margin: 0 auto 80px;
-
-    text-align: center;
-
+  text-align: center;
 }
-
 
 .numbers-header .section-label {
-
-    color: #168dcc;
-
+  color: #168dcc;
 }
-
 
 .numbers-header h2 {
+  font-size: clamp(45px, 7vw, 90px);
 
-    font-size: clamp(45px, 7vw, 90px);
+  line-height: 0.9;
 
-    line-height: 0.9;
+  letter-spacing: -3px;
 
-    letter-spacing: -3px;
-
-    margin-bottom: 30px;
-
+  margin-bottom: 30px;
 }
-
 
 .numbers-header > p:last-child {
+  max-width: 650px;
 
-    max-width: 650px;
+  margin: auto;
 
-    margin: auto;
+  font-size: 19px;
 
-    font-size: 19px;
+  line-height: 1.6;
 
-    line-height: 1.6;
-
-    color: #52636d;
-
+  color: #52636d;
 }
 
+.numbers-grid {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+/* =========================
+   DESPERDÍCIO EM NÚMEROS
+========================= */
+
+.numbers-section {
+  min-height: 100vh;
+
+  background-color: #f4f8fa;
+
+  color: #071923;
+
+  padding: 120px 10%;
+}
+
+/* CABEÇALHO */
+
+.numbers-header {
+  max-width: 900px;
+
+  margin: 0 auto 80px;
+
+  text-align: center;
+}
+
+.numbers-header .section-label {
+  color: #168dcc;
+}
+
+.numbers-header h2 {
+  font-size: clamp(45px, 7vw, 90px);
+
+  line-height: 0.9;
+
+  letter-spacing: -3px;
+
+  margin-bottom: 30px;
+}
+
+.numbers-header > p:last-child {
+  max-width: 650px;
+
+  margin: auto;
+
+  font-size: 19px;
+
+  line-height: 1.6;
+
+  color: #52636d;
+}
+
+/* CARDS */
 
 .numbers-grid {
+  max-width: 1200px;
 
-    max-width: 1200px;
+  margin: auto;
 
-    margin: auto;
+  display: grid;
 
-    display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
 
-    grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
 
-    gap: 25px;
+.number-card {
+  padding: 40px;
 
+  background-color: white;
+
+  border-radius: 15px;
+
+  border: 1px solid #dce8ed;
+
+  min-height: 300px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  transition: 0.3s;
+}
+
+.number-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 35px rgba(0, 40, 60, 0.12);
+}
+
+.number-card .number {
+  font-size: clamp(55px, 7vw, 90px);
+
+  font-weight: bold;
+
+  line-height: 0.9;
+
+  color: #168dcc;
+}
+
+.number-card .unit {
+  font-size: 18px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  margin-top: 10px;
+}
+
+.number-card h3 {
+  margin-top: 25px;
+
+  font-size: 20px;
+}
+
+.number-card p {
+  margin-top: 15px;
+
+  color: #52636d;
+
+  line-height: 1.6;
+}
+
+.large-card {
+  background: linear-gradient(145deg, #083b57, #071923);
+
+  color: white;
+}
+
+.large-card .number {
+  color: #48c9ff;
+}
+
+.large-card p {
+  color: #c4d5dd;
+}
+
+/* =========================
+   EXEMPLO MATEMÁTICO
+========================= */
+
+.math-example {
+  max-width: 1100px;
+
+  margin: 100px auto 0;
+
+  padding: 60px;
+
+  background-color: #071923;
+
+  color: white;
+
+  border-radius: 20px;
+
+  text-align: center;
+}
+
+.math-example .section-label {
+  color: #48c9ff;
+}
+
+.math-example h3 {
+  font-size: clamp(35px, 5vw, 60px);
+
+  margin-bottom: 20px;
+}
+
+.math-example > p {
+  color: #c4d5dd;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+}
+
+/* CONTA */
+
+.calculation {
+  margin-top: 50px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+.calculation div {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.calculation span {
+  font-size: 50px;
+
+  font-weight: bold;
+}
+
+.calculation small {
+  color: #9fb5c0;
+
+  font-size: 14px;
+}
+
+.operator {
+  color: #48c9ff;
+
+  font-size: 35px !important;
+}
+
+.calculation .result span {
+  color: #48c9ff;
 }
