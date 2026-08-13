@@ -1546,203 +1546,227 @@ footer {
 ========================= */
 
 .solutions-section {
+  background-color: #071923;
 
-    background-color: #071923;
+  color: white;
 
-    color: white;
-
-    padding: 120px 8%;
-
+  padding: 120px 8%;
 }
-
 
 .solutions-header {
+  max-width: 900px;
 
-    max-width: 900px;
+  margin: 0 auto 80px;
 
-    margin: 0 auto 80px;
-
-    text-align: center;
-
+  text-align: center;
 }
-
 
 .solutions-header .section-label {
-
-    color: #48c9ff;
-
+  color: #48c9ff;
 }
-
 
 .solutions-header h2 {
+  font-size: clamp(45px, 7vw, 85px);
 
-    font-size: clamp(45px, 7vw, 85px);
+  line-height: 0.95;
 
-    line-height: 0.95;
+  letter-spacing: -3px;
 
-    letter-spacing: -3px;
-
-    margin: 25px 0 30px;
-
+  margin: 25px 0 30px;
 }
-
 
 .solutions-header > p:last-child {
+  max-width: 700px;
 
-    max-width: 700px;
+  margin: auto;
 
-    margin: auto;
+  color: #aebfc7;
 
-    color: #aebfc7;
+  font-size: 18px;
 
-    font-size: 18px;
-
-    line-height: 1.7;
-
+  line-height: 1.7;
 }
-
 
 /* CARDS */
 
 .solutions-grid {
+  max-width: 1200px;
 
-    max-width: 1200px;
+  margin: auto;
 
-    margin: auto;
+  display: grid;
 
-    display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 18px;
-
+  gap: 18px;
 }
-
 
 .solution-card {
+  padding: 35px;
 
-    padding: 35px;
+  min-height: 260px;
 
-    min-height: 260px;
+  border: 1px solid #1b3745;
 
-    border: 1px solid #1b3745;
+  border-radius: 16px;
 
-    border-radius: 16px;
+  background-color: #0a222f;
 
-    background-color: #0a222f;
-
-    transition: transform 0.25s, border-color 0.25s;
-
+  transition:
+    transform 0.25s,
+    border-color 0.25s;
 }
-
 
 .solution-card:hover {
+  transform: translateY(-5px);
 
-    transform: translateY(-5px);
-
-    border-color: #48c9ff;
-
+  border-color: #48c9ff;
 }
-
 
 .solution-card > span {
+  color: #48c9ff;
 
-    color: #48c9ff;
+  font-size: 12px;
 
-    font-size: 12px;
+  font-weight: bold;
 
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
+  letter-spacing: 2px;
 }
-
 
 .solution-card h3 {
+  font-size: 23px;
 
-    font-size: 23px;
-
-    margin: 45px 0 15px;
-
+  margin: 45px 0 15px;
 }
-
 
 .solution-card p {
+  color: #9fb2bb;
 
-    color: #9fb2bb;
+  line-height: 1.7;
 
-    line-height: 1.7;
-
-    margin: 0;
-
+  margin: 0;
 }
-
 
 /* FRASE FINAL */
 
 .solutions-final {
+  max-width: 1200px;
 
-    max-width: 1200px;
+  margin: 100px auto 0;
 
-    margin: 100px auto 0;
+  padding-top: 60px;
 
-    padding-top: 60px;
+  border-top: 1px solid #1b3745;
 
-    border-top: 1px solid #1b3745;
+  display: grid;
 
-    display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
-    grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 
-    gap: 30px;
-
-    text-align: center;
-
+  text-align: center;
 }
-
 
 .solution-big-number {
+  color: #48c9ff;
 
-    color: #48c9ff;
+  font-size: 12px;
 
-    font-size: 12px;
+  letter-spacing: 4px;
 
-    letter-spacing: 4px;
-
-    font-weight: bold;
-
+  font-weight: bold;
 }
-
 
 .solutions-final h3 {
+  font-size: 32px;
 
-    font-size: 32px;
-
-    margin-top: 12px;
-
+  margin-top: 12px;
 }
 @media (max-width: 800px) {
+  .solutions-section {
+    padding: 80px 6%;
+  }
 
-    .solutions-section {
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
 
-        padding: 80px 6%;
+  .solutions-final {
+    grid-template-columns: 1fr;
 
-    }
+    gap: 45px;
+  }
+}
+/* =========================
+   CONCLUSÃO
+========================= */
 
+.conclusion-section {
+  min-height: 80vh;
 
-    .solutions-grid {
+  background-color: #030d14;
 
-        grid-template-columns: 1fr;
+  color: white;
 
-    }
+  display: flex;
 
+  align-items: center;
 
-    .solutions-final {
+  padding: 120px 8%;
+}
 
-        grid-template-columns: 1fr;
+.conclusion-content {
+  max-width: 900px;
 
-        gap: 45px;
+  margin: auto;
 
-    }
+  text-align: center;
+}
 
+.conclusion-content .section-label {
+  color: #48c9ff;
+}
+
+.conclusion-content h2 {
+  font-size: clamp(50px, 8vw, 100px);
+
+  line-height: 0.9;
+
+  letter-spacing: -4px;
+
+  margin: 25px 0 45px;
+}
+
+.conclusion-content > p:not(.section-label) {
+  max-width: 760px;
+
+  margin: 0 auto 22px;
+
+  color: #aebfc7;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+.conclusion-final {
+  margin-top: 60px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.conclusion-final span {
+  color: #aebfc7;
+
+  font-size: 19px;
+}
+
+.conclusion-final strong {
+  color: #48c9ff;
+
+  font-size: 28px;
 }
