@@ -1541,3 +1541,208 @@ footer {
     gap: 35px;
   }
 }
+/* =========================
+   SOLUÇÕES
+========================= */
+
+.solutions-section {
+
+    background-color: #071923;
+
+    color: white;
+
+    padding: 120px 8%;
+
+}
+
+
+.solutions-header {
+
+    max-width: 900px;
+
+    margin: 0 auto 80px;
+
+    text-align: center;
+
+}
+
+
+.solutions-header .section-label {
+
+    color: #48c9ff;
+
+}
+
+
+.solutions-header h2 {
+
+    font-size: clamp(45px, 7vw, 85px);
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+
+    margin: 25px 0 30px;
+
+}
+
+
+.solutions-header > p:last-child {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #aebfc7;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* CARDS */
+
+.solutions-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.solution-card {
+
+    padding: 35px;
+
+    min-height: 260px;
+
+    border: 1px solid #1b3745;
+
+    border-radius: 16px;
+
+    background-color: #0a222f;
+
+    transition: transform 0.25s, border-color 0.25s;
+
+}
+
+
+.solution-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #48c9ff;
+
+}
+
+
+.solution-card > span {
+
+    color: #48c9ff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.solution-card h3 {
+
+    font-size: 23px;
+
+    margin: 45px 0 15px;
+
+}
+
+
+.solution-card p {
+
+    color: #9fb2bb;
+
+    line-height: 1.7;
+
+    margin: 0;
+
+}
+
+
+/* FRASE FINAL */
+
+.solutions-final {
+
+    max-width: 1200px;
+
+    margin: 100px auto 0;
+
+    padding-top: 60px;
+
+    border-top: 1px solid #1b3745;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    text-align: center;
+
+}
+
+
+.solution-big-number {
+
+    color: #48c9ff;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+}
+
+
+.solutions-final h3 {
+
+    font-size: 32px;
+
+    margin-top: 12px;
+
+}
+@media (max-width: 800px) {
+
+    .solutions-section {
+
+        padding: 80px 6%;
+
+    }
+
+
+    .solutions-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .solutions-final {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+    }
+
+}
