@@ -1273,3 +1273,271 @@ footer {
 .footer-bottom p {
   margin: 0;
 }
+/* =========================
+   BIOLOGIA
+========================= */
+
+.biology-section {
+  background-color: #f4f8fa;
+
+  color: #071923;
+
+  padding: 120px 8%;
+}
+
+/* CABEÇALHO */
+
+.biology-header {
+  max-width: 900px;
+
+  margin: 0 auto 80px;
+
+  text-align: center;
+}
+
+.biology-header .section-label {
+  color: #168dcc;
+}
+
+.biology-header h2 {
+  font-size: clamp(45px, 7vw, 85px);
+
+  line-height: 0.95;
+
+  letter-spacing: -3px;
+
+  margin: 25px 0 30px;
+}
+
+.biology-header > p:last-child {
+  max-width: 700px;
+
+  margin: auto;
+
+  color: #60747e;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+/* CARDS */
+
+.biology-grid {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.biology-card {
+  background-color: white;
+
+  border: 1px solid #dce7eb;
+
+  border-radius: 18px;
+
+  padding: 40px;
+
+  min-height: 260px;
+
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+
+.biology-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 35px rgba(7, 25, 35, 0.08);
+}
+
+.biology-number {
+  display: block;
+
+  color: #168dcc;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 45px;
+}
+
+.biology-card h3 {
+  font-size: 25px;
+
+  margin-bottom: 15px;
+}
+
+.biology-card p {
+  color: #647983;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+/* EFEITO EM CADEIA */
+
+.biology-chain {
+  max-width: 1200px;
+
+  margin: 110px auto 0;
+
+  padding-top: 80px;
+
+  border-top: 1px solid #d8e4e8;
+}
+
+.chain-header {
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.chain-header h3 {
+  font-size: clamp(28px, 4vw, 45px);
+
+  margin-top: 15px;
+}
+
+.chain {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.chain-item {
+  flex: 1;
+
+  min-height: 130px;
+
+  padding: 25px;
+
+  background-color: white;
+
+  border: 1px solid #dce7eb;
+
+  border-radius: 15px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.chain-item strong {
+  font-size: 18px;
+
+  margin-bottom: 8px;
+}
+
+.chain-item span {
+  color: #71838c;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+.chain-arrow {
+  color: #168dcc;
+
+  font-size: 25px;
+
+  font-weight: bold;
+}
+
+/* DESTAQUE FINAL */
+
+.biology-highlight {
+  max-width: 1200px;
+
+  margin: 100px auto 0;
+
+  padding: 55px;
+
+  border-radius: 20px;
+
+  background-color: #071923;
+
+  color: white;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+.biology-symbol {
+  color: #48c9ff;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 4px;
+}
+
+.biology-highlight h3 {
+  font-size: clamp(30px, 4vw, 50px);
+
+  line-height: 1.05;
+
+  margin-top: 20px;
+}
+
+.biology-highlight p {
+  color: #aebfc7;
+
+  line-height: 1.7;
+
+  font-size: 16px;
+}
+@media (max-width: 800px) {
+  .biology-section {
+    padding: 80px 6%;
+  }
+
+  .biology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chain {
+    flex-direction: column;
+  }
+
+  .chain-item {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  .chain-arrow {
+    transform: rotate(90deg);
+  }
+
+  .biology-highlight {
+    grid-template-columns: 1fr;
+
+    padding: 35px;
+
+    gap: 35px;
+  }
+}
