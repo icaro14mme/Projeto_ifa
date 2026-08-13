@@ -931,26 +931,37 @@ nav a:hover {
 
   border-radius: 20px;
 }
-
 /* =========================
-   GRÁFICO DE 1.000 L
+   GRÁFICO DOS 1.000 L
 ========================= */
 
-.water-chart {
-  display: flex;
+.chart-description {
+  color: #71838c;
 
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  margin-bottom: 30px;
+}
+
+/* BARRA PRINCIPAL */
+
+.water-bar {
   width: 100%;
 
-  height: 95px;
+  height: 110px;
 
-  border-radius: 12px;
+  display: flex;
+
+  border-radius: 14px;
 
   overflow: hidden;
 
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
-.water-loss {
+.water-waste {
   width: 40%;
 
   background-color: #071923;
@@ -963,12 +974,12 @@ nav a:hover {
 
   justify-content: center;
 
-  padding: 20px;
+  align-items: center;
 
-  box-sizing: border-box;
+  text-align: center;
 }
 
-.water-used {
+.water-remaining {
   width: 60%;
 
   background-color: #168dcc;
@@ -981,43 +992,148 @@ nav a:hover {
 
   justify-content: center;
 
-  padding: 20px;
+  align-items: center;
 
-  box-sizing: border-box;
+  text-align: center;
 }
 
-.water-chart span {
-  font-size: 22px;
-
-  font-weight: bold;
+.water-waste strong,
+.water-remaining strong {
+  font-size: 25px;
 }
 
-.water-chart small {
-  margin-top: 5px;
+.water-waste span,
+.water-remaining span {
+  margin-top: 6px;
 
   font-size: 12px;
+
+  opacity: 0.8;
 }
 
-.water-total-label {
+/* LEGENDA */
+
+.water-legend {
   display: flex;
 
-  align-items: baseline;
+  gap: 35px;
+
+  margin-bottom: 35px;
+}
+
+.water-legend > div {
+  display: flex;
+
+  align-items: center;
 
   gap: 10px;
+}
+
+.legend-square {
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 3px;
+}
+
+.legend-square.waste {
+  background-color: #071923;
+}
+
+.legend-square.remaining {
+  background-color: #168dcc;
+}
+
+.water-legend p {
+  display: flex;
+
+  flex-direction: column;
+
+  margin: 0;
+}
+
+.water-legend strong {
+  font-size: 14px;
+}
+
+.water-legend small {
+  color: #71838c;
+
+  font-size: 11px;
+}
+
+/* CÁLCULO */
+
+.math-calculation {
+  padding: 25px;
+
+  background-color: #f1f7f9;
+
+  border-radius: 12px;
+
+  text-align: center;
+}
+
+.math-calculation > p {
+  color: #168dcc;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
 
   margin-bottom: 20px;
 }
 
-.water-total-label strong {
-  font-size: 22px;
+.calculation {
+  display: flex;
 
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 18px;
+
+  flex-wrap: wrap;
+}
+
+.calculation span,
+.calculation strong {
+  font-size: 25px;
+}
+
+.calculation strong {
   color: #168dcc;
 }
 
-.water-total-label span {
-  font-size: 13px;
+.calculation b {
+  font-size: 22px;
+
+  color: #48c9ff;
+}
+
+.math-calculation > small {
+  display: block;
+
+  margin-top: 12px;
 
   color: #71838c;
+
+  font-size: 12px;
+}
+
+/* OBSERVAÇÃO */
+
+.chart-note {
+  margin-top: 20px;
+
+  color: #71838c;
+
+  font-size: 12px;
+
+  line-height: 1.5;
 }
 
 /* =========================
